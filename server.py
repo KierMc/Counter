@@ -5,6 +5,8 @@ app.secret_key= 'counterkey'
 
 @app.route('/')
 def count():
+    if "visit" not in session:
+        session["visits"] = 1
     return render_template("index.html")
 
 @app.route('/press_btn')
