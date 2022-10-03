@@ -1,0 +1,24 @@
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    gap: 50px;
+}
+
+.button1{
+    background-color: lightskyblue;
+}
+
+.button2{
+    background-color: red;
+}
+.button1, .button2{
+    border: 3px solid black;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black
+}
